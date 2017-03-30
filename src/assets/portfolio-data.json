@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Angular Movie Web App",
+            "shortDescription": "Single Page Application using Angular 2",
+            "fullDescription": "The website is for movie lovers. It uses 3rd party movie api for movie data",
+            "images": [
+                "web_wallet_movies_01.png", 
+                "web_wallet_movies_02.png",
+                "web_wallet_movies_03.png", 
+                "web_wallet_movies_04.png"
+            ],
+            "technologies": [
+                "Angular",
+                "HMTL",
+                "CSS"
+            ],
+            "contribution": "100%",
+            "role": "Developer",
+            "tags": [
+                "SPA",
+                "Web Development"
+            ],
+            "link": "https://walletmovies.me/home"
+        },
+        {
+            "id": 2,
+            "name": "Android Classic Movie App",
+            "shortDescription": "Android movie app with social authentication integration",
+            "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
+            "images": [
+                "web_wallet_movies_01.png", 
+                "web_wallet_movies_02.png",
+                "web_wallet_movies_03.png", 
+                "web_wallet_movies_04.png"
+            ],
+            "technologies": [
+                "Angular",
+                "HMTL",
+                "CSS"
+            ],
+            "contribution": "100%",
+            "role": "Developer",
+            "tags": [
+                "SPA",
+                "Web Development"
+            ],
+            "link": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie&hl=en"
+        }
+    ]
+}

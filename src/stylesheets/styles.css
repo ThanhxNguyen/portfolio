@@ -1,0 +1,57 @@
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #E0E0E0;
+    /*margin-top: 10px;
+    margin-bottom: 10px;*/
+}
+
+.footer {
+    background-color: rgba(33, 33, 33, 1);
+    color: #E1E1E1;
+    padding: 20px;
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    /*height: 60px;*/
+    width: 100%;
+}
+
+.footer a {
+    color: #E1E1E1 !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.phantom {
+    display: block;
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+}
+
+/*override bootstrap navbar styles*/
+.navbar a {
+    color: #E1E1E1 !important;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgba(33, 33, 33, .5);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        border: none !important;
+        border-radius: 0 !important;
+    }
+}
+
+/*animation for routing transition*/
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: all 250ms ease-in;
+}

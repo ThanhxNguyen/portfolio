@@ -1,0 +1,54 @@
+{
+    "personalStatement": "A graduate developer from RMIT University with excellent academic results, specializing in web and mobile development. As a quick learner and passionate developer, I am confident working in diverse cultures and dynamic environment",
+    "education": [
+        {
+            "school": "RMIT University",
+            "qualification": "Bachelor of Information Techonology",
+            "startYear": "2015",
+            "endYear": "2016",
+            "achievement": [
+                "Achieved 4.0 GPA",
+                "Invited into Golden Key Honours Society in recognition of above average results"
+            ]
+        },
+        {
+            "school": "Swinburne University",
+            "qualification": "Diploma of Website Development",
+            "startYear": "2014",
+            "endYear": "2014",
+            "achievement": [
+                "Achieved 3.44 GPA"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "jobTitle": "IT Mentor",
+            "jobType": "Mentoring Volunteer Service",
+            "location": "RMIT University",
+            "startDate": "Jun 2016",
+            "endDate": "Dec 2016",
+            "responsibilities": [
+                "Assisted mentees in their first year of study",
+                "Provided guidance for mentees in solving programming problems"
+            ],
+            "Achievements": [
+                "Improved interpersonal skills as demonstrated in working with multiple mentees",
+                "Improved problem solving skills by guiding mentees solving their problems",
+                "Successfully established leadership skills, as a result of leading mentees to success"
+            ]
+        }
+    ],
+    "skills": [
+        "Experience in creating websites from scratch",
+        "Proficiency in JavaScript, HTML, CSS",
+        "Experience in working with PHP, NodeJS, MySQL/NoSQL as well as Angular, Bootstrap, Laravel, JQuery developed through projects and self-learning",
+        "Good understanding of database design and relationships",
+        "Good understanding of responsive design",
+        "Good knowledge in React/React Native",
+        "Experience in developing Java and Android apps",
+        "Solid knowledge in object-oriented programming",
+        "Good knowledge in Agile/SCRUM"
+    ],
+    "interest": "Enjoy playing online games, watching movies, having a cup of coffee with my friends and chill."
+}
