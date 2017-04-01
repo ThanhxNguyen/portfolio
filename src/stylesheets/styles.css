@@ -1,3 +1,12 @@
+body {
+    background-color: #F9F9F9;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #E1E1E1;
+}
+
 hr {
     width: 100%;
     border: none;
@@ -21,7 +30,6 @@ hr {
 .footer a {
     color: #E1E1E1 !important;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .phantom {
@@ -31,12 +39,16 @@ hr {
     width: 100%;
 }
 
-/*override bootstrap navbar styles*/
+/*override bootstrap styles*/
 .navbar a {
     color: #E1E1E1 !important;
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: rgba(33, 33, 33, .5);
+}
+
+.label-as-badge {
+    border-radius: 1em;
 }
 
 @media screen and (min-width: 768px) {

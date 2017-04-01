@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Radium from 'radium';
+import baseStyle from '../stylesheets/base-style';
 
 const styles = {};
     styles.icon = {
@@ -16,17 +17,17 @@ const styles = {};
     }
     styles.githubIcon = {
         ...styles.icon,
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     }
     styles.linkedinIcon = {
         //original color
         // color: '#0077B5',
         ...styles.icon,
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     }
     styles.twitterIcon = {
         ...styles.icon,
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     }
     styles.footerNavColumn = {
         display: 'flex',

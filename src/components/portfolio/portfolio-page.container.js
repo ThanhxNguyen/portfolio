@@ -3,16 +3,22 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavBarBackground } from '../../actions/index';
+import ProjectList from './project-list.container';
 
-//components
-import Heading from './heading.component';
-import About from './about.component';
+const styles = {};
 
-class HomePage extends Component {
+styles.container = {
+    paddingTop: '100px',
+    width: '80%',
+    margin: 'auto',
+    marginBottom: '100px'
+}
+
+class PortfolioPage extends Component {
 
     componentDidMount() {
         //dispatch an action to indicate that navbar background should be transparent
-        this.props.setNavBarBackground(true);
+        this.props.setNavBarBackground(false);
     }
 
     render() {
@@ -23,18 +29,18 @@ class HomePage extends Component {
                 transitionAppearTimeout={500}
                 transitionEnter={false}
                 transitionLeave={false} >
-                <div>
-                    <Heading />
-                    <About />
+                <div style={styles.container}>
+                    <h1>PortfolioPage</h1>
+                    <hr/>
+                    <ProjectList/>
                 </div>
             </ReactCSSTransitionGroup>
         )
     }//end render
-
-}//end class
+}//end class 
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({ setNavBarBackground: setNavBarBackground }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(PortfolioPage);

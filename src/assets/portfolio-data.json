@@ -11,18 +11,16 @@
                 "web_wallet_movies_03.png", 
                 "web_wallet_movies_04.png"
             ],
-            "technologies": [
-                "Angular",
-                "HMTL",
-                "CSS"
-            ],
             "contribution": "100%",
             "role": "Developer",
             "tags": [
                 "SPA",
-                "Web Development"
+                "Web Development",
+                "Angular",
+                "HMTL",
+                "CSS"
             ],
-            "link": "https://walletmovies.me/home"
+            "githubLink": "https://github.com/ThanhxNguyen/web-wallet-movies"
         },
         {
             "id": 2,
@@ -30,23 +28,62 @@
             "shortDescription": "Android movie app with social authentication integration",
             "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
             "images": [
-                "web_wallet_movies_01.png", 
-                "web_wallet_movies_02.png",
-                "web_wallet_movies_03.png", 
-                "web_wallet_movies_04.png"
-            ],
-            "technologies": [
-                "Angular",
-                "HMTL",
-                "CSS"
+                "android_wallet_movies_01.png", 
+                "android_wallet_movies_02.png",
+                "android_wallet_movies_03.png", 
+                "android_wallet_movies_04.png"
             ],
             "contribution": "100%",
             "role": "Developer",
             "tags": [
-                "SPA",
-                "Web Development"
+                "Android",
+                "Mobile Development",
+                "Java",
+                "Firebase"
             ],
-            "link": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie&hl=en"
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
+        },
+        {
+            "id": 3,
+            "name": "Android Classic Movie App",
+            "shortDescription": "Android movie app with social authentication integration",
+            "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
+            "images": [
+                "android_wallet_movies_01.png", 
+                "android_wallet_movies_02.png",
+                "android_wallet_movies_03.png", 
+                "android_wallet_movies_04.png"
+            ],
+            "contribution": "100%",
+            "role": "Developer",
+            "tags": [
+                "Android1",
+                "Mobile Development1",
+                "Java1",
+                "Firebase1"
+            ],
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
+        },
+        {
+            "id": 4,
+            "name": "Android Classic Movie App",
+            "shortDescription": "Android movie app with social authentication integration",
+            "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
+            "images": [
+                "android_wallet_movies_01.png", 
+                "android_wallet_movies_02.png",
+                "android_wallet_movies_03.png", 
+                "android_wallet_movies_04.png"
+            ],
+            "contribution": "100%",
+            "role": "Developer",
+            "tags": [
+                "Android2",
+                "Mobile Development2",
+                "Java2",
+                "Firebase2"
+            ],
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
         }
     ]
 }

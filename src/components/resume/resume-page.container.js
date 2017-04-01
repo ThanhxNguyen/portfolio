@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ResumeContent from './resume-content.container';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavBarBackground } from '../../actions/index';
 
-//components
-import Heading from './heading.component';
-import About from './about.component';
-
-class HomePage extends Component {
+class ResumePage extends Component {
 
     componentDidMount() {
         //dispatch an action to indicate that navbar background should be transparent
-        this.props.setNavBarBackground(true);
+        this.props.setNavBarBackground(false);
     }
 
     render() {
@@ -23,18 +20,17 @@ class HomePage extends Component {
                 transitionAppearTimeout={500}
                 transitionEnter={false}
                 transitionLeave={false} >
-                <div>
-                    <Heading />
-                    <About />
+                <div className="container">
+                    ResumePage
+                    <ResumeContent />
                 </div>
             </ReactCSSTransitionGroup>
         )
     }//end render
-
-}//end class
+}//end class 
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({ setNavBarBackground: setNavBarBackground }, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(ResumePage);

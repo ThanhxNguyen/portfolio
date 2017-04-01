@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import bgImagePath from '../../assets/images/dark_triangle_pattern_bg.png';
 import Radium from 'radium';
+import baseStyle from '../../stylesheets/base-style';
 
 //define styles for this component
 const styles = {
@@ -38,15 +39,15 @@ const styles = {
         }
     },
     githubIcon: {
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     },
     linkedinIcon: {
         //original color
         // color: '#0077B5',
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     },
     twitterIcon: {
-        color: '#1DA1F2'
+        color: baseStyle.secondaryColor.color
     }
 }
 
@@ -83,6 +84,6 @@ class Heading extends Component {
 
 }//end class 
 
-//make this component available with JS in CSS using Radium
+//make this component available with Radium
 export default Radium(Heading);
 
