@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import bgImagePath from '../../assets/images/dark_triangle_pattern_bg.png';
 import Radium from 'radium';
-import baseStyle from '../../stylesheets/base-style';
+import baseStyle, { primaryColorAlpha } from '../../stylesheets/base-style';
 
 //define styles for this component
 const styles = {
@@ -22,7 +22,7 @@ const styles = {
     subHeadingNavContainer: {
         width: '100%',
         padding: '10px 20px 10px 0',
-        backgroundColor: "rgba(33, 33, 33, .5)",
+        backgroundColor: baseStyle.primaryColorAlpha(0.5)
     },
     subHeadingNav: {
         display: 'flex',
@@ -33,6 +33,7 @@ const styles = {
     subHeadingNavItem: {
         cursor: 'pointer',
         marginRight: '20px',
+        transition: 'all 1s ease-in-out',
         ':hover': {
             transform: 'rotate(360deg) scale(1.2)',
             transition: 'all 1s ease-in-out'

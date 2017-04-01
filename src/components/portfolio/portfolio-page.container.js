@@ -4,14 +4,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavBarBackground } from '../../actions/index';
 import ProjectList from './project-list.container';
+import baseStyle from '../../stylesheets/base-style';
 
 const styles = {};
 
 styles.container = {
-    paddingTop: '100px',
-    width: '80%',
-    margin: 'auto',
-    marginBottom: '100px'
+    ...baseStyle.container
 }
 
 class PortfolioPage extends Component {

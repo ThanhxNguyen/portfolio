@@ -16,28 +16,12 @@ hr {
     margin-bottom: 10px;*/
 }
 
-.footer {
-    background-color: rgba(33, 33, 33, 1);
-    color: #E1E1E1;
-    padding: 20px;
-    /*position: fixed;*/
-    left: 0;
-    bottom: 0;
-    /*height: 60px;*/
-    width: 100%;
-}
 
-.footer a {
+
+/*.footer a {
     color: #E1E1E1 !important;
     cursor: pointer;
-}
-
-.phantom {
-    display: block;
-    padding: 20px;
-    height: 60px;
-    width: 100%;
-}
+}*/
 
 /*override bootstrap styles*/
 .navbar a {

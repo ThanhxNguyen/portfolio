@@ -20,7 +20,8 @@
                 "HMTL",
                 "CSS"
             ],
-            "githubLink": "https://github.com/ThanhxNguyen/web-wallet-movies"
+            "githubLink": "https://github.com/ThanhxNguyen/web-wallet-movies",
+            "siteLink": "https://walletmovies.me/"
         },
         {
             "id": 2,
@@ -41,7 +42,8 @@
                 "Java",
                 "Firebase"
             ],
-            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
+            "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
         },
         {
             "id": 3,
@@ -62,7 +64,8 @@
                 "Java1",
                 "Firebase1"
             ],
-            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
+            "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
         },
         {
             "id": 4,
@@ -83,7 +86,8 @@
                 "Java2",
                 "Firebase2"
             ],
-            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies"
+            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
+            "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
         }
     ]
 }

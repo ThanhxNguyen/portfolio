@@ -4,6 +4,13 @@ import ResumeContent from './resume-content.container';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavBarBackground } from '../../actions/index';
+import baseStyle from '../../stylesheets/base-style';
+
+const styles = {};
+styles.container = {
+    ...baseStyle.container,
+    width: '60%'
+}
 
 class ResumePage extends Component {
 
@@ -20,8 +27,9 @@ class ResumePage extends Component {
                 transitionAppearTimeout={500}
                 transitionEnter={false}
                 transitionLeave={false} >
-                <div className="container">
-                    ResumePage
+                <div style={styles.container}>
+                    <h1>Resume</h1>
+                    <hr/>
                     <ResumeContent />
                 </div>
             </ReactCSSTransitionGroup>

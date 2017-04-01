@@ -31,16 +31,17 @@ styles.projectCardImagePopup = {
     width: '100%',
     top: '0',
     left: '0',
-    color: '#E1E1E1',
+    color: baseStyle.whiteInDark,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: "rgba(33, 33, 33, 0)",
+    backgroundColor: baseStyle.primaryColorAlpha(0),
     zIndex: '1',
     opacity: '0',
+    transition: 'all .3s ease-in',
     ':hover': {
         opacity: '1',
-        backgroundColor: "rgba(33, 33, 33, .5)",
+        backgroundColor: baseStyle.primaryColorAlpha(0.5),
         transition: 'all .3s ease-in'
     }
 }
@@ -67,12 +68,14 @@ styles.projectCardTags = {
 styles.projectCardFooter = {
     flex: '1 0 auto',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     justifyContent: 'flex-end',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+    flexWrap: 'wrap'
 }
 styles.projectCardLink = {
     ...baseStyle.baseBtn,
+    margin: '0 0 0 .5em'
 }
 
 class ProjectItem extends Component {
@@ -85,7 +88,8 @@ class ProjectItem extends Component {
                         style={styles.projectCardImage} 
                         src={require('../../assets/images/'+this.props.project.images[0])} alt="PROJECT"/>
                     <div style={styles.projectCardImagePopup}>
-                        <a href=""><h3>Read more</h3></a>
+                        <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+                        <a href=""><h3>More</h3></a>
                     </div>
                 </div>
 
@@ -99,6 +103,9 @@ class ProjectItem extends Component {
                     <p>{this.props.project.shortDescription}</p>
                     <hr/>
                     <div style={styles.projectCardFooter}>
+                        <a style={styles.projectCardLink} href={this.props.project.siteLink} key={this.props.project.siteLink} className="btn" aria-label="Left Align">
+                            Visit Site
+                        </a>
                         <a style={styles.projectCardLink} href={this.props.project.githubLink} key={this.props.project.githubLink} className="btn" aria-label="Left Align">
                             Link to GitHub
                         </a>

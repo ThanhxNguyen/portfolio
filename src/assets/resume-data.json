@@ -1,6 +1,6 @@
 {
     "personalStatement": "A graduate developer from RMIT University with excellent academic results, specializing in web and mobile development. As a quick learner and passionate developer, I am confident working in diverse cultures and dynamic environment",
-    "education": [
+    "educations": [
         {
             "school": "RMIT University",
             "qualification": "Bachelor of Information Techonology",
@@ -23,8 +23,8 @@
     ],
     "experience": [
         {
-            "jobTitle": "IT Mentor",
-            "jobType": "Mentoring Volunteer Service",
+            "role": "IT Mentor",
+            "title": "Mentoring Volunteer Service",
             "location": "RMIT University",
             "startDate": "Jun 2016",
             "endDate": "Dec 2016",
@@ -32,7 +32,7 @@
                 "Assisted mentees in their first year of study",
                 "Provided guidance for mentees in solving programming problems"
             ],
-            "Achievements": [
+            "achievements": [
                 "Improved interpersonal skills as demonstrated in working with multiple mentees",
                 "Improved problem solving skills by guiding mentees solving their problems",
                 "Successfully established leadership skills, as a result of leading mentees to success"
