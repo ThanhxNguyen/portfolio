@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import bgImagePath from '../../assets/images/dark_triangle_pattern_bg.png';
+import { Link } from 'react-router-dom';
 import Radium from 'radium';
-import baseStyle, { primaryColorAlpha } from '../../stylesheets/base-style';
+import baseStyle, { primaryColorAlpha, textColor, activeDarkAlpha } from '../../stylesheets/base-style';
 
 //define styles for this component
 const styles = {
@@ -10,25 +11,46 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'flex-end',
         alignItems: 'center',
+        // marginTop: '-50px',
         backgroundImage: `url(${bgImagePath})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
-        color: '#ffffff',
+        color: textColor.white,
         height: '550px', //(base height = 500px) + (navbar height = 50px)
     },
+    headingBtn: {
+        padding: '6px 12px',
+        border: `1px solid ${textColor.whiteInDark}`,
+        borderRadius: '4px',
+        margin: '1em .5em 1em 0',
+        cursor: 'pointer',
+        backgroundColor: activeDarkAlpha(0),
+        transition: 'all .1s ease-in',
+        ':hover': {
+            backgroundColor: activeDarkAlpha(.6),
+            transition: 'all .1s ease-in'
+        }
+    },
     mainContent: {
-        marginBottom: '50px'
+        marginBottom: '50px',
+        //mobile portrait
+        '@media screen and (max-width: 29.999em)': {
+            textAlign: 'center'
+        }
     },
     subHeadingNavContainer: {
         width: '100%',
-        padding: '10px 20px 10px 0',
-        backgroundColor: baseStyle.primaryColorAlpha(0.5)
+        padding: '.4em 1em .4em 0',
+        backgroundColor: primaryColorAlpha(0.5)
     },
     subHeadingNav: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
+        '@media screen and (max-width: 29.999em)': {
+            justifyContent: 'center'
+        }
     },
     subHeadingNavItem: {
         cursor: 'pointer',
@@ -60,21 +82,25 @@ class Heading extends Component {
                 <div style={styles.mainContent}>
                     <h1>I am</h1>
                     <h1>Thanh Nguyen</h1>
-                    <h3>Passionate Web/Mobile Developer</h3>
+                    <h3>A passionate Web/Mobile Developer</h3><br />
+                    <div>
+                        <span key={'headingBtn-resume'} style={styles.headingBtn}><Link to="/resume">My Resume</Link></span>
+                        <span key={'headingBtn-projects'} style={styles.headingBtn}><Link to="/projects">My Projects</Link></span>
+                    </div>
                 </div>
 
                 <div style={styles.subHeadingNavContainer}>
                     <div style={styles.subHeadingNav}>
                         {/*GitHub*/}
-                        <a style={styles.subHeadingNavItem} key={'github'} href="https://github.com/ThanhxNguyen">
+                        <a style={styles.subHeadingNavItem} key={'subHeadingNavItem-github'} href="https://github.com/ThanhxNguyen">
                             <i style={styles.githubIcon} className="fa fa-github-square fa-3x" aria-hidden="true"></i>
                         </a>
                         {/*Linkedin*/}
-                        <a style={styles.subHeadingNavItem} key={'linkedin'} href="https://www.linkedin.com/in/thanh-nguyen-78b910126/">
+                        <a style={styles.subHeadingNavItem} key={'subHeadingNavItem-linkedin'} href="https://www.linkedin.com/in/thanh-nguyen-78b910126/">
                             <i style={styles.linkedinIcon} className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
                         </a>
                         {/*Twitter*/}
-                        <a style={styles.subHeadingNavItem} key={'twitter'} href="https://twitter.com/Thanhpn_Nguyen">
+                        <a style={styles.subHeadingNavItem} key={'subHeadingNavItem-twitter'} href="https://twitter.com/Thanhpn_Nguyen">
                             <i style={styles.twitterIcon} className="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
                         </a>
                     </div>

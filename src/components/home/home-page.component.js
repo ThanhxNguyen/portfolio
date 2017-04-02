@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { setNavBarBackground } from '../../actions/index';
+import { setHomePage, setNavBarTransparent } from '../../actions/index';
 
 //components
 import Heading from './heading.component';
@@ -11,8 +11,11 @@ import About from './about.component';
 class HomePage extends Component {
 
     componentDidMount() {
+        //set page title
+        document.title = "Home";
         //dispatch an action to indicate that navbar background should be transparent
-        this.props.setNavBarBackground(true);
+        this.props.setHomePage(true);
+        this.props.setNavBarTransparent(true);
     }
 
     render() {
@@ -24,8 +27,8 @@ class HomePage extends Component {
                 transitionEnter={false}
                 transitionLeave={false} >
                 <div>
-                    <Heading />
-                    <About />
+                    <Heading key={'heading'} />
+                    <About key={'about'}/>
                 </div>
             </ReactCSSTransitionGroup>
         )
@@ -34,7 +37,10 @@ class HomePage extends Component {
 }//end class
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ setNavBarBackground: setNavBarBackground }, dispatch);
+    return bindActionCreators({ 
+        setHomePage: setHomePage,
+        setNavBarTransparent: setNavBarTransparent 
+    }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(HomePage);

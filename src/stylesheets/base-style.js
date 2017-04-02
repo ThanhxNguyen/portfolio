@@ -2,17 +2,17 @@ export const primaryColor = '#212121';
 export const secondaryColor = '#42A5F5';
 export const textColor = {
     whiteInDark: '#E1E1E1',
-    white: '#FFFFFF'
+    white: '#FFF',
+    black: '#333'
 }
-export function primaryColorAlpha(alpha) { return `rgba(33, 33, 33, ${alpha})`}
+export function primaryColorAlpha(alpha) { return `rgba(33, 33, 33, ${alpha})` }
+export function activeDarkAlpha(alpha) { return `rgba(66, 66, 66, ${alpha})` }
 
 const styles = {};
-    styles.primaryColorAlpha = primaryColorAlpha;
     styles.container = {
-        paddingTop: '100px',
+        padding: '6em 0 5em 0',
         width: '80%',
         margin: 'auto',
-        marginBottom: '100px'
     }
     styles.secondaryColor = {
         color: secondaryColor
@@ -22,6 +22,7 @@ const styles = {};
         borderRadius: '4px',
         padding: '6px 12px',
         margin: '0',
+        cursor: 'pointer',
         color: secondaryColor,
         transition: 'all .1s ease-in',
         ':hover': {

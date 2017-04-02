@@ -1,1 +1,2 @@
 export const NAVBAR_TRANSPARENT = 'NAVBAR_TRANSPARENT'; 
+export const HOME_PAGE = "HOME_PAGE";

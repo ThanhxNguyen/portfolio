@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import baseStyle from '../../stylesheets/base-style';
+import baseStyle, { primaryColorAlpha } from '../../stylesheets/base-style';
 
 const styles = {};
 styles.projectCard = {
@@ -13,7 +13,15 @@ styles.projectCard = {
     paddingBottom: '10px',
     boxShadow: '0 0 5px #E0E0E0',
     backgroundColor: '#FFFFFF',
-    marginBottom: '20px'
+    marginBottom: '20px',
+    //mobile portrait (1em = 16px)
+    '@media screen and (max-width: 29.999em)': {
+        width: '95%'
+    },
+    // landscape phone and portrait tablet (1em = 16px)
+    '@media screen and (min-width: 30em) and (max-width: 59.9999em)' : {
+        width: '48%'
+    }
 }
 styles.projectCardImageContainer = {
     position: 'relative',
@@ -35,15 +43,21 @@ styles.projectCardImagePopup = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: baseStyle.primaryColorAlpha(0),
+    backgroundColor: primaryColorAlpha(0),
     zIndex: '1',
     opacity: '0',
     transition: 'all .3s ease-in',
     ':hover': {
         opacity: '1',
-        backgroundColor: baseStyle.primaryColorAlpha(0.5),
+        backgroundColor: primaryColorAlpha(0.5),
         transition: 'all .3s ease-in'
     }
+}
+styles.projectCardImagePopup.link = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
 }
 styles.projectCardContent = {
     flex: '1',
@@ -88,8 +102,7 @@ class ProjectItem extends Component {
                         style={styles.projectCardImage} 
                         src={require('../../assets/images/'+this.props.project.images[0])} alt="PROJECT"/>
                     <div style={styles.projectCardImagePopup}>
-                        <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
-                        <a href=""><h3>More</h3></a>
+                        <a href={this.props.project.siteLink}><h3>View</h3></a>
                     </div>
                 </div>
 

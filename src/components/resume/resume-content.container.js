@@ -34,12 +34,12 @@ class ResumeContent extends Component {
     renderEducationList(educations) {
         return educations.map(education => {
             return (
-                <div style={styles.marginBottom}>
+                <div style={styles.marginBottom} key={education.qualification}>
                     <h4>{education.qualification}</h4>
                     <h5>{education.school} | {education.startYear} - {education.endYear}</h5>
                     <h5>Achievement</h5>
                         <ul>
-                            {education.achievement.map(item => <li>{item}</li>)}
+                            {education.achievement.map(item => <li key={item}>{item}</li>)}
                         </ul>
                 </div>
             )
@@ -49,7 +49,7 @@ class ResumeContent extends Component {
     renderSkillList(skillList) {
         return (
             <ul>
-                {skillList.map(skill => <li>{skill}</li>)}
+                {skillList.map(skill => <li key={skill}>{skill}</li>)}
             </ul>
         )
     }//end renderSkillList
@@ -57,16 +57,16 @@ class ResumeContent extends Component {
     renderExperienceList(experienceList) {
         return experienceList.map(experience => {
             return (
-                <div style={styles.marginBottom}>
+                <div style={styles.marginBottom} key={experience.title + experience.location}>
                     <h4>{experience.title}</h4>
                     <h5>{experience.role} <i>at</i> {experience.location} | {experience.startDate} - {experience.endDate}</h5>
                     <h5>Responsibilities</h5>
                         <ul>
-                            {experience.responsibilities.map(item => <li>{item}</li>)}
+                            {experience.responsibilities.map(item => <li key={item}>{item}</li>)}
                         </ul>
                     <h5>Achievements</h5>
                         <ul>
-                            {experience.achievements.map(item => <li>{item}</li>)}
+                            {experience.achievements.map(item => <li key={item}>{item}</li>)}
                         </ul>
                 </div>
             )

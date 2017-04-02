@@ -2,7 +2,7 @@ body {
     background-color: #F9F9F9;
 }
 
-a, a:hover {
+a, a:hover, a:focus {
     text-decoration: none;
     color: #E1E1E1;
 }
@@ -12,18 +12,14 @@ hr {
     border: none;
     height: 1px;
     background-color: #E0E0E0;
-    /*margin-top: 10px;
-    margin-bottom: 10px;*/
+    padding: 0 !important;
+    margin: 1em 0 1em 0;
 }
 
-
-
-/*.footer a {
-    color: #E1E1E1 !important;
-    cursor: pointer;
-}*/
-
 /*override bootstrap styles*/
+.navbar {
+    margin-bottom: 0 !important;
+}
 .navbar a {
     color: #E1E1E1 !important;
 }

@@ -5,24 +5,20 @@ import baseStyle, { primaryColorAlpha, textColor } from '../stylesheets/base-sty
 
 const styles = {};
     styles.footer = {
+        display: 'flex',
+        flexDirection: 'column',
         backgroundColor: primaryColorAlpha(1),
         color: textColor.whiteInDark,
-        padding: '20px',
+        padding: '1em 0 0 0',
         left: '0',
         bottom: '0',
         width: '100%'
     }
-    styles.phantom = {
-        display: 'block',
-        padding: '20px',
-        height: '60px',
-        width: '100%'
-    }
     styles.icon = {
-        marginTop: '20px',
-        marginRight: '20px',
-        marginBottom: '20px',
-        marginLeft: '20px',
+        marginTop: '0',
+        marginRight: '10px',
+        marginBottom: '10px',
+        marginLeft: '10px',
         cursor: 'pointer',
         transition: 'all .25s ease-in',
         ':hover': {
@@ -44,32 +40,42 @@ const styles = {};
         ...styles.icon,
         color: baseStyle.secondaryColor.color
     }
+    styles.footerContent = {
+        display: 'flex',
+        flexDirection: 'row'
+    }
     styles.footerNavColumn = {
+        flex: '1 0 auto',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
     }
+    // styles.footerSocialBlock = {
+    //     border: '1px solid yellow',
+    //     flex: '1 0 auto',
+    //     display: 'flex',
+    //     flexDirection: 'row',
+    //     flexWrap: 'wrap',
+    //     justifyContent: 'center',
+    //     alignItems: 'center'
+    // }
 
 class Footer extends Component {
 
     render() {
         return (
-            <div>
-                <div style={styles.phantom}></div>
-                <footer className="container-fluid" style={styles.footer}>
-                    <div className="row">
-                        <div className="col-xs-6 text-center">Navigation</div>
-                        <div className="col-xs-6 text-center">Connect me on</div>
+            <footer style={styles.footer}>
+                <div style={styles.footerContent}>
+                    <div style={styles.footerNavColumn}>
+                        <h5>Navigation</h5>
+                        <Link to="/">Home</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/resume">Resume</Link>
                     </div>
-                    <hr/>
-                    <div className="row">
-                        <div className="col-xs-6" style={styles.footerNavColumn}>
-                            <Link to="/">Home</Link>
-                            <Link to="/projects">Projects</Link>
-                            <Link to="/resume">Resume</Link>
-                        </div>
-                        <div className="col-xs-6 text-center">
+                    <div style={styles.footerNavColumn}>
+                        <h5>Connect me on</h5>
+                        <div>
                             <a href="https://github.com/ThanhxNguyen">
                                 <i key={'f-github'} style={styles.githubIcon} className="fa fa-github-square fa-3x" aria-hidden="true"></i>
                             </a>
@@ -81,8 +87,10 @@ class Footer extends Component {
                             </a>
                         </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+                <hr style={ {margin: '.5em 0 0 0', padding: '0'} }/>
+                <div  className="text-center"><i>This website is built using ReactJS</i></div>
+            </footer>
         )
     }//end render
 }//end class

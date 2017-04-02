@@ -7,7 +7,7 @@ const styles = {};
 styles.projectListContainer = {
     display: 'flex',
     justifyContent: 'space-around',
-    flexWrap: 'wrap'    
+    flexWrap: 'wrap'
 }
 
 class ProjectList extends Component {
