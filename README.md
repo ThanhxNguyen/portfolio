@@ -1,6 +1,6 @@
 # React + Redux Portfolio app
 
-Link to website: [thanhpaulnguyen.com](www.thanhpaulnguyen.com)
+Link to website: [thanhpaulnguyen.com](https://thanhpaulnguyen.com/)
 
 The webstite is built using ReactJS and Redux for state management. It is fully responsive using Flex box and CSS media query.
 
