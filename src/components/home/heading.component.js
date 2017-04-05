@@ -17,6 +17,10 @@ const styles = {
         backgroundSize: '100% 100%',
         color: textColor.white,
         height: '550px', //(base height = 500px) + (navbar height = 50px)
+        //mobile portrait (1em = 16px)
+        '@media screen and (max-width: 29.999em)': {
+            height: '400px'
+        }
     },
     headingBtn: {
         padding: '6px 12px',
@@ -40,7 +44,7 @@ const styles = {
     },
     subHeadingNavContainer: {
         width: '100%',
-        padding: '.4em 1em .4em 0',
+        padding: '.4em 0 .4em 0',
         backgroundColor: primaryColorAlpha(0.5)
     },
     subHeadingNav: {
@@ -48,13 +52,14 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
+        padding: '0 3em',
         '@media screen and (max-width: 29.999em)': {
             justifyContent: 'center'
         }
     },
     subHeadingNavItem: {
         cursor: 'pointer',
-        marginRight: '20px',
+        margin: '0 0.7em',
         transition: 'all 1s ease-in-out',
         ':hover': {
             transform: 'rotate(360deg) scale(1.2)',

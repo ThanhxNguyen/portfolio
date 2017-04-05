@@ -3,13 +3,10 @@
         {
             "id": 1,
             "name": "Angular Movie Web App",
-            "shortDescription": "Single Page Application using Angular 2",
+            "shortDescription": "Single page movie application using Angular 2",
             "fullDescription": "The website is for movie lovers. It uses 3rd party movie api for movie data",
             "images": [
-                "web_wallet_movies_01.png", 
-                "web_wallet_movies_02.png",
-                "web_wallet_movies_03.png", 
-                "web_wallet_movies_04.png"
+                "web_wallet_movies_01.png"
             ],
             "contribution": "100%",
             "role": "Developer",
@@ -20,6 +17,8 @@
                 "HMTL",
                 "CSS"
             ],
+            "startDate": "Feb 2017",
+            "endDate": "present",
             "githubLink": "https://github.com/ThanhxNguyen/web-wallet-movies",
             "siteLink": "https://walletmovies.me/"
         },
@@ -29,10 +28,7 @@
             "shortDescription": "Android movie app with social authentication integration",
             "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
             "images": [
-                "android_wallet_movies_01.png", 
-                "android_wallet_movies_02.png",
-                "android_wallet_movies_03.png", 
-                "android_wallet_movies_04.png"
+                "android_wallet_movies_01.png"
             ],
             "contribution": "100%",
             "role": "Developer",
@@ -42,52 +38,30 @@
                 "Java",
                 "Firebase"
             ],
+            "startDate": "Jan 2017",
+            "endDate": "present",
             "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
             "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
         },
         {
             "id": 3,
-            "name": "Android Classic Movie App",
-            "shortDescription": "Android movie app with social authentication integration",
-            "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
+            "name": "Laravel 5 Movie Website",
+            "shortDescription": "Archieved - Check out the new version Angular Movie Web App.",
+            "fullDescription": "",
             "images": [
-                "android_wallet_movies_01.png", 
-                "android_wallet_movies_02.png",
-                "android_wallet_movies_03.png", 
-                "android_wallet_movies_04.png"
+                "laravel_movie_web_01.png"
             ],
             "contribution": "100%",
             "role": "Developer",
             "tags": [
-                "Android1",
-                "Mobile Development1",
-                "Java1",
-                "Firebase1"
+                "Laravel5",
+                "PHP",
+                "Bootstrap"
             ],
-            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
-            "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
-        },
-        {
-            "id": 4,
-            "name": "Android Classic Movie App",
-            "shortDescription": "Android movie app with social authentication integration",
-            "fullDescription": "The app uses 3rd party movie api for movie data, Firebase for cloud storage with Facebook and Google authentication integration. The app is free and available on Google Play.",
-            "images": [
-                "android_wallet_movies_01.png", 
-                "android_wallet_movies_02.png",
-                "android_wallet_movies_03.png", 
-                "android_wallet_movies_04.png"
-            ],
-            "contribution": "100%",
-            "role": "Developer",
-            "tags": [
-                "Android2",
-                "Mobile Development2",
-                "Java2",
-                "Firebase2"
-            ],
-            "githubLink": "https://github.com/ThanhxNguyen/wallet-movies",
-            "siteLink": "https://play.google.com/store/apps/details?id=com.nguyen.paul.thanh.walletmovie"
+            "startDate": "Aug 2016",
+            "endDate": "Sep 2016",
+            "githubLink": "https://github.com/ThanhxNguyen/Laravel-movie-blog",
+            "siteLink": ""
         }
     ]
 }

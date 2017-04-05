@@ -62,8 +62,8 @@ class NavBar extends Component {
             <nav style={styles.container}>
                 <div style={this.props.transparentNavBg ? styles.navDarkTransparent : styles.navDark}>
                     <NavLink style={styles.navLink} exact strict activeStyle={styles.activeNavLink} to="/">Home</NavLink>
-                    <NavLink style={styles.navLink} exact strict activeStyle={styles.activeNavLink} to="/projects">Projects</NavLink>
-                    <NavLink style={styles.navLink} exact strict activeStyle={styles.activeNavLink} to="/resume">Resume</NavLink>
+                    <NavLink style={styles.navLink} activeStyle={styles.activeNavLink} to="/projects">Projects</NavLink>
+                    <NavLink style={styles.navLink} activeStyle={styles.activeNavLink} to="/resume">Resume</NavLink>
                 </div>
             </nav>
         )
@@ -96,4 +96,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({ setNavBarTransparent: setNavBarTransparent }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Radium(NavBar));
+export default connect(mapStateToProps, mapDispatchToProps, null, {pure: false})(Radium(NavBar));

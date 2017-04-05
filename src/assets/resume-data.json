@@ -1,5 +1,5 @@
 {
-    "personalStatement": "A graduate developer from RMIT University with excellent academic results, specializing in web and mobile development. As a quick learner and passionate developer, I am confident working in diverse cultures and dynamic environment",
+    "personalStatement": "An IT graduate from RMIT University with excellent academic results, specializing in web and mobile development. As a quick learner and passionate developer, I am confident working in diverse cultures and dynamic environment. Seeking opportunities to join your organization as an enthusiastic and flexible developer.",
     "educations": [
         {
             "school": "RMIT University",
@@ -34,21 +34,20 @@
             ],
             "achievements": [
                 "Improved interpersonal skills as demonstrated in working with multiple mentees",
-                "Improved problem solving skills by guiding mentees solving their problems",
+                "Improved problem solving skills by analysing, breaking down the problems and helping mentees solving their programming challenges",
                 "Successfully established leadership skills, as a result of leading mentees to success"
             ]
         }
     ],
     "skills": [
-        "Experience in creating websites from scratch",
-        "Proficiency in JavaScript, HTML, CSS",
-        "Experience in working with PHP, NodeJS, MySQL/NoSQL as well as Angular, Bootstrap, Laravel, JQuery developed through projects and self-learning",
-        "Good understanding of database design and relationships",
-        "Good understanding of responsive design",
-        "Good knowledge in React/React Native",
-        "Experience in developing Java and Android apps",
-        "Solid knowledge in object-oriented programming",
-        "Good knowledge in Agile/SCRUM"
+        "Experience in creating websites from scratch and proficiency in JavaScript, HTML, CSS, PHP, NodeJS, MySQL/NoSQL as demonstrated by the completion of multiple web projects",
+        "Experience in working with Angular, React/React Native, Bootstrap, Laravel, JQuery by working on side projects and self-learning",
+        "Good understanding of database design and relationships gained from learning and experience",
+        "Good understanding of responsive design gained from learning and experience",
+        "Good knowledge of Java, C# gained from learning and experience",
+        "Experience in developing Android apps as demonstrated by publishing and maintaining apps on Google Play",
+        "Solid knowledge in object-oriented programming developed through programming experience and learning",
+        "Good knowledge in Agile/SCRUM as demonstrated by passing the “Software Engineering Project Management” subject with high distinction grade"
     ],
     "interest": "Enjoy playing online games, watching movies, having a cup of coffee with my friends and chill."
 }

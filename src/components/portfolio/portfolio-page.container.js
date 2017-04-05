@@ -40,7 +40,7 @@ class PortfolioPage extends Component {
                 transitionEnter={false}
                 transitionLeave={false} >
                 <div style={styles.container}>
-                    <h1>PortfolioPage</h1>
+                    <h1>Side Projects</h1>
                     <hr/>
                     <ProjectList/>
                 </div>

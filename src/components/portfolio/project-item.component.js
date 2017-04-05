@@ -46,11 +46,11 @@ styles.projectCardImagePopup = {
     backgroundColor: primaryColorAlpha(0),
     zIndex: '1',
     opacity: '0',
-    transition: 'all .3s ease-in',
+    transition: 'all .2s ease-in',
     ':hover': {
         opacity: '1',
         backgroundColor: primaryColorAlpha(0.5),
-        transition: 'all .3s ease-in'
+        transition: 'all .2s ease-in'
     }
 }
 styles.projectCardImagePopup.link = {
@@ -101,9 +101,14 @@ class ProjectItem extends Component {
                     <img className="img-responsive" 
                         style={styles.projectCardImage} 
                         src={require('../../assets/images/'+this.props.project.images[0])} alt="PROJECT"/>
-                    <div style={styles.projectCardImagePopup}>
-                        <a href={this.props.project.siteLink}><h3>View</h3></a>
-                    </div>
+                    {
+                        this.props.project.siteLink.length > 0 ? 
+                        (
+                            <div style={styles.projectCardImagePopup}>
+                                <a href={this.props.project.siteLink}><h3>View</h3></a>
+                            </div>
+                        ) : null
+                    }
                 </div>
 
                 <div style={styles.projectCardContent}>
@@ -111,14 +116,22 @@ class ProjectItem extends Component {
                     <p style={styles.projectCardTags}>
                         <em><b>Tags:</b></em>&nbsp;&nbsp;{this.props.project.tags.map(tag => <span key={tag} className="label label-success label-as-badge">{tag}</span>)}
                     </p>
+                    <p>
+                        <em><b>Timeline:</b></em>&nbsp;&nbsp;{this.props.project.startDate} - {this.props.project.endDate}
+                    </p>
                     <hr/>
                     <h4>Summary</h4>
                     <p>{this.props.project.shortDescription}</p>
                     <hr/>
                     <div style={styles.projectCardFooter}>
-                        <a style={styles.projectCardLink} href={this.props.project.siteLink} key={this.props.project.siteLink} className="btn" aria-label="Left Align">
-                            Visit Site
-                        </a>
+                        {
+                            this.props.project.siteLink.length > 0 ? 
+                            (
+                                <a style={styles.projectCardLink} href={this.props.project.siteLink} key={this.props.project.siteLink} className="btn" aria-label="Left Align">
+                                    Visit Site
+                                </a>
+                            ) : null
+                        }
                         <a style={styles.projectCardLink} href={this.props.project.githubLink} key={this.props.project.githubLink} className="btn" aria-label="Left Align">
                             Link to GitHub
                         </a>
