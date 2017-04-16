@@ -60,7 +60,7 @@ styles.projectCardImagePopup.link = {
     alignItems: 'center'
 }
 styles.projectCardContent = {
-    flex: '1',
+    flex: '1 0 auto',
     display: 'flex',
     flexDirection: 'column',
     borderTop: '1px solid #E0E0E0',

@@ -19,7 +19,7 @@ const styles = {};
     }
     styles.navbar = {
         transition: 'all .3s ease-in',
-        flex: '1',
+        flex: '1 0 auto',
         paddingLeft: '10%',
         display: 'flex',
         justifyContent: 'flex-start',

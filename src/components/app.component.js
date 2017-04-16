@@ -18,7 +18,7 @@ const styles = {};
         flexDirection: 'column'
     }
     styles.main = {
-        flex: '1'
+        flex: '1 0 auto'
     }
 
 class App extends Component {
